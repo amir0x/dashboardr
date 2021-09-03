@@ -44,6 +44,8 @@ a{
     position: fixed;
     visibility: visible;
     transition: all 0.3s;
+    top: 0;
+    z-index: 10;
 }
 .inserted .navigation {
    transform: translateX(-100%);
@@ -60,14 +62,29 @@ a{
 nav{
     max-width: 100%;
     background-color: #596B8C;
+    margin-left: var(--navigation-width);
     padding: 20px;
     color: #fff;
     font-weight: 500;
     display: flex;
     justify-content: space-between;
+    transition: all 0.3s;
+    z-index: 999;
+
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 }
+.inserted nav {
+    margin-left: 0;
+ }
+
+
 .body{
     max-width: 100%;
+    margin-top: 70px;
 }
 footer{
     max-width: 100%;
@@ -570,7 +587,7 @@ nav>ul>li{
     margin-left: 10px;
 }
 
-/* customer result section */
+/* customer search result section */
 .customer-search-result{}
 .customer-search-result form{
     background-color: #fff;

@@ -9,8 +9,9 @@ accountHolder.addEventListener('click', ()=>{
 })
 sideLeft.addEventListener('click', ()=>{
     container.classList.toggle("inserted");
+    container.classList.toggle("sidebar-enable");
 })
 
-dropdownLi.addEventListener('click', ()=>{
-    menuUl.classList.toggle("active");
-})
+// dropdownLi.addEventListener('click', ()=>{
+//     menuUl.classList.toggle("active");
+// })
