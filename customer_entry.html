@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- left sidebar start -->
+        <div class="navigation">
+            <div class="logo">
+                <a href="index.html">Logo</a>
+            </div>
+            <div class="left-sidebar">
+                <div class="inner-left-sidebar">
+                    <a class="home-class" href="index.html"> <i class="fas fa-home"></i>Home</a>
+                </div>
+                <div class="inner-left-sidebar">
+                <ul>
+                    <li><a class=" home-class font-14" href="customer_entry.html"> <i class="far fa-credit-card"></i>খানা প্রধানের তথ্য দিন</a></li>
+                    <li><a class=" home-class font-14" href="customer_list.html"> <i class="fas fa-list"></i>খানা প্রধানের তালিকা</a></li>
+                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i>কলেজ ও অফিসের তথ্য</a></li>
+                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> অন্যান্য সদস্যের তথ্য</a></li>
+                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> করদাতার তালিকা</a></li>
+                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> অন্যান্য সদস্যের তালিকা</a></li>
+                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> খানা প্রধানের তথ্য এডিট</a></li>
+                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> সর্বশেষ হোল্ডিং</a></li>
+                </ul>
+                </div>
+            
+                
+            </div>
+        </div> <!--./navigation-->
+        <!-- left sidebar end -->
+
+        <!-- Right sidebar start  -->
+        <div class="inner-body-container">
+        <nav>
+            <div class="mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <g fill="none">
+                        <path d="M1 1h14M1 6h14M1 11h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </g>
+                </svg>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li class="arrow">
+                    <a href="#">Report 
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    </li>
+                <li><a href="#">Posting</a></li>
+
+            </ul>
+            <div class="account-holder dropdown">
+                <a href="#">Amir Hamza 
+                    <span>
+                        <!-- &#8744; -->
+                        &#8735;
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Calender</a></li>
+                    <li><a href="#">CalenderMessages</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- body section start -->
+        <div class="body">
+            <div class="breadcrumb-container">
+                <div class="search-bar">
+                    <form>
+                        <input type="search" class="search-field" placeholder="search...">
+                        <button type="submit" value="Search">Search</button>
+                    </form>
+                </div>
+                <div class="inner-breadcrumb">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">বিন্যাস</a></li>
+                        <li class="active"><a href="customer_entry.html">খানা প্রধানের তথ্য দিন</a></li>
+                    </ul>
+                </div>
+            </div> <!--./breadcrumb-container---------------------->
+
+            <!-- inner-customer start -->
+            <div class="inner-khanapro-form">
+                <div class="heading-bar">
+                    <div class="khana-heading">
+                        <h3>ই-খানা তথ্য ফরম</h3>
+                        <div class="symbol">
+                            <i class="fas fa-chevron-up"></i>
+                            <i class="fas fa-wrench"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <p style="color:#EA2027;"># বিঃ দ্রঃ দয়া করে সংখ্যার কাজগুলো ইংরেজীতে ইনপুট দিন</p>
+                </div>
+                <div class="e-totho-form-container">
+                    <form class="t-form" action="">
+                        <div class="e-totho-grid-box">
+                            <div class="e-totho-grid-item">
+                                <label for="">ওয়ার্ড নাম্বার </label>
+                                <select id="" name="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">গ্রাম </label>
+                                <select id="" name="">
+                                    <option value="বনপাড়া">বনপাড়া</option>
+                                    <option value="নতুন বাজার">নতুন বাজার</option>
+                                    <option value="কালিকাপুর">কালিকাপুর</option>
+                                    <option value="বড়াইগ্রাম">বড়াইগ্রাম</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">হোল্ডিং নাম্বার</label>
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">বাৎসরিক গড় আয়</label>
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">খানা প্রধানের নাম</label>
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item t-twoline">
+                                <label for="" >খানা প্রধানের নাম 
+                                    <span>(ইংরেজিতে)</span>       
+                                </label>
+                                
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">শিক্ষাগত যোগ্যতা </label>
+                                <select id="" name="শিক্ষাগত যোগ্যতা" placeholder="শিক্ষাগত যোগ্যতা">
+                                    <option value="বনপাড়া">এস.এস.সি</option>
+                                    <option value="নতুন বাজার">এইস.এস.সি</option>
+                                    <option value="কালিকাপুর">অনার্স</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">মোবাইল নাম্বার</label>
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">পিতা/স্বামীর নাম</label>
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">মাতার নাম</label>
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item gcol-3">
+                                <label for="">পরিবারের সদস্য সংখ্যা</label>
+                                <input type="text">
+                                <label for="">পরিবারের সদস্য (ছেলে)</label>
+                                <input type="text">
+                                <label for="">পরিবারের সদস্য (মেয়ে)</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="e-totho-grid-box">
+
+                            <div class="e-totho-grid-item">
+                                <label for="">জন্ম তরিখ</label>
+                                <input type="date">
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">জন্ম নিবন্ধন নম্বর</label>
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">জাতীয় পরিচয় পত্র নম্বর</label>
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">খানা প্রধানের ধর্ম </label>
+                                <select id="" name="">
+                                    <option value="ইসলাম">ইসলাম</option>
+                                    <option value="শনাতন">শনাতন</option>
+                                    <option value="খ্রিস্টান">খ্রিস্টান</option>
+                                    <option value="বৌদ্ধ">বৌদ্ধ</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">খানা প্রধানের লিঙ্গ </label>
+                                <select id="" name="">
+                                    <option value="পুরুষ">পুরুষ</option>
+                                    <option value="মহিলা">মহিলা</option>
+                                    <option value="তৃতীয় লিঙ্গ">তৃতীয় লিঙ্গ</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">খানা প্রধানের পেশা </label>
+                                <select id="" name="">
+                                    <option value="কৃষক">কৃষক</option>
+                                    <option value="ব্যবসা">ব্যবসা</option>
+                                    <option value="চাকুরী">চাকুরী</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">নলকূপ আছে কি-না </label>
+                                <select id="" name="">
+                                    <option value="হ্যাঁ">হ্যাঁ</option>
+                                    <option value="না">না</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">সেনেটারী ল্যাট্রিন </label>
+                                <select id="" name="">
+                                    <option value="পাকা পায়খানা">পাকা পায়খানা</option>
+                                    <option value="কাঁচা পায়খানা">কাঁচা পায়খানা</option>
+                                    <option value="আধাপাকা পায়খানা">আধাপাকা পায়খানা</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item t-twoline">
+                                <label for="">সামাজিক সুবিধা <br>
+                                    <span>(অতীতে পেয়েছেন)</span>
+                                </label>
+                                
+                                <select id="" name="">
+                                    <option value="">ভাতা</option>
+                                    <option value="">বয়স্ক ভাতা</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item t-twoline">
+                                <label for="">সামাজিক সুবিধা
+                                    <span>(পাওয়ার যোগ্য)</span>
+                                </label>
+                                
+                                <select id="" name="">
+                                    <option value="">হ্যাঁ</option>
+                                    <option value="">না</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item t-twoline">
+                                <label for="">সামাজিক সুবিধা <br>
+                                    <span>(বর্তমানে পাচ্ছেন)</span>
+                                </label>
+                                
+                                <select id="" name="">
+                                    <option value="">ভাতা</option>
+                                    <option value="">বয়স্ক ভাতা</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">আনুমানিক বার্ষিক ভাড়া</label>
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for=""> ঋনের বার্ষিক সুদ</label>
+                                <input type="text">
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for="">বসবাসের ধরন</label>
+                                <select id="" name="">
+                                    <option value="">নিজের বাড়ি</option>
+                                    <option value="">বাসা বাড়ি</option>
+                                  </select>
+                            </div>
+                            <div class="e-totho-grid-item">
+                                <label for=""> পুর্বের বকেয়া (ইংরেজিতে)</label>
+                                <input type="text">
+                            </div>
+                            
+                        </div> 
+                        <div class="e-submit-div">
+                            <button>Cancel</button>
+                            <input type="submit" value="Save">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <!-- inner-customer end -->
+
+        </div>
+        <!-- body section end -->
+        <footer>
+             <p>Copyright &copy; 2021 <a href="#">Bonpara IT Solution</a> All Rights Reserved</p> 
+        </footer>
+    </div>
+    <!-- Right sidebar end  -->
+
+    </div> <!--./container-->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
