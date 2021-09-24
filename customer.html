@@ -7,12 +7,14 @@
     <title>Tax App</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
-    <div class="container">
+    <div class="main-container">
         <div class="navigation">
             <div class="logo">
                 <a href="index.html">Logo</a>
@@ -22,17 +24,37 @@
                     <a class="home-class" href="index.html"> <i class="fas fa-home"></i>Home</a>
                 </div>
                 <div class="inner-left-sidebar">
-                <ul>
-                    <li><a class=" home-class font-14" href="customer_entry.html"> <i class="far fa-credit-card"></i>খানা প্রধানের তথ্য দিন</a></li>
-                    <li><a class=" home-class font-14" href="customer_list.html"> <i class="fas fa-list"></i>খানা প্রধানের তালিকা</a></li>
-                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i>কলেজ ও অফিসের তথ্য</a></li>
-                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> অন্যান্য সদস্যের তথ্য</a></li>
-                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> করদাতার তালিকা</a></li>
-                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> অন্যান্য সদস্যের তালিকা</a></li>
-                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> খানা প্রধানের তথ্য এডিট</a></li>
-                    <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> সর্বশেষ হোল্ডিং</a></li>
-                </ul>
-                </div>
+                    <ul class="plr-5">
+                        <li class="dropdown"><a class=" home-class font-14" href="#">বিন্যাস </a>
+                          
+                        </li>
+                        <li class="dropdown"><a class=" home-class font-14" href="#">গ্রাহক <i class="fas fa-chevron-right"></i></a>
+                            <ul class="submenu collapse">
+                                <li><a class=" home-class font-14" href="customer_entry.html"> <i class="far fa-credit-card"></i>খানা প্রধানের তথ্য দিন</a></li>
+                                <li><a class=" home-class font-14" href="customer_list.html"> <i class="fas fa-list"></i>খানা প্রধানের তালিকা  </a>
+                                </li>
+                                <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i>কলেজ ও অফিসের তথ্য</a></li>
+                                <li class="dropdown"><a class=" home-class font-14" href="javascript:void(0)"> <i class="far fa-credit-card"></i> অন্যান্য সদস্যের তথ্য <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="submenu collapse">
+                                        <li><a class=" home-class font-14" href="#">amir</a></li>
+                                        <li><a class=" home-class font-14" href="#">amir</a></li>
+                                        <li><a class=" home-class font-14" href="#">amir</a></li>
+                                        <li><a class=" home-class font-14" href="#">amir</a></li>
+                                    </ul>
+                                
+                                </li>
+                                <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> করদাতার তালিকা</a></li>
+                                <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> অন্যান্য সদস্যের তালিকা</a></li>
+                                <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> খানা প্রধানের তথ্য এডিট</a></li>
+                                <li><a class=" home-class font-14" href="#"> <i class="far fa-credit-card"></i> সর্বশেষ হোল্ডিং</a></li>
+                            </ul>
+                        </li>
+                        <li><a class=" home-class font-14" href="#">হিসাব </a></li>
+                        <li><a class=" home-class font-14" href="#">প্রতিবেদন </a></li>
+                        <li><a class=" home-class font-14" href="#">করজেনারেট </a></li>
+       
+                    </ul>
+                    </div> <!--./inner-left-sidebar-->
             
                 
             </div>
@@ -66,7 +88,7 @@
                         &#8735;
                     </span>
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-a">
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Calender</a></li>
                     <li><a href="#">CalenderMessages</a></li>

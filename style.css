@@ -15,6 +15,9 @@ List Of Content
 :root{
     --navigation-width:220px;
     --primary-color:#5f5f5f;
+    --nav-color:#006df0;
+    --nav-f-color:#0727d7;
+    --nav-color: #596B8C;
 }
 
 *{
@@ -26,11 +29,21 @@ body{
     font-family: sans-serif;
     background-color: #e6ecf3;
 }
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
 ul li{
     list-style: none;
 }
 a{
     text-decoration: none;
+}
+svg{
+    vertical-align: baseline;
+}
+a:hover{
+    color: #fff;
 }
 
 /* divided Section ================== */
@@ -61,7 +74,7 @@ a{
 
 nav{
     max-width: 100%;
-    background-color: #596B8C;
+    background-color: var(--nav-f-color);
     margin-left: var(--navigation-width);
     padding: 20px;
     color: #fff;
@@ -70,11 +83,12 @@ nav{
     justify-content: space-between;
     transition: all 0.3s;
     z-index: 999;
-
-
+    /* for sticky menu  */
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    line-height: 1;
 
 }
 .inserted nav {
@@ -101,7 +115,9 @@ footer a:hover{
     color: lightsalmon;
 }
 
-/* nav bar ===================== */
+/* ==========================
+        nav bar 
+   =========================== */
 nav .mobile-menu{
     width: 100px;
     font-size: 37px;
@@ -123,23 +139,6 @@ nav>ul{
 nav>ul>li{
     margin-right: 15px;
 }
-
-
-/* navigation =================  */
-.navigation{
-    /* border-right: 2px solid rgb(112, 109, 109); */
-    background-color: #fff;
-}
-.logo{
-    width: 100%;
-    font-size: 30px;
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f3f3f3;
-}
-.logo a{
-    
-}
 /* dropdown-menu account ========== */
 .account-holder{
     position: relative;
@@ -154,7 +153,7 @@ nav>ul>li{
     padding: 3px;
 }
 
-.account-holder .dropdown-menu{
+.account-holder .dropdown-a{
     position: absolute;
     background-color: #fff;
     top: 100%;
@@ -168,7 +167,7 @@ nav>ul>li{
     visibility: hidden;
 
 }
-.dropdown-menu li a {
+.dropdown-a li a {
     padding: 8px 15px;
     color: #5f5f5f;
     font-size: 15px;
@@ -177,16 +176,16 @@ nav>ul>li{
 }
 
 
-.open .dropdown-menu{
+.open .dropdown-a{
     visibility: visible;
 
 }
-.dropdown-menu li a:hover {
+.dropdown-a li a:hover {
     background: #f3f3f3;
     color: #262626;
 
 }
-.dropdown-menu:before {
+.dropdown-a:before {
     position: absolute;
     display: inline-block!important;
     content: '';
@@ -197,28 +196,89 @@ nav>ul>li{
     border-left: 8px solid transparent;
     z-index:1000;
 }
+
+/* ======================
+        left navigation 
+   =======================  */
+.navigation{
+    /* border-right: 2px solid rgb(112, 109, 109); */
+    background-color: #006df0;
+    /* background: linear-gradient(#006df04d, #006df0); */
+    background-image: url(assets/images/1.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    top: 0;
+}
+.logo{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 20px;
+    /* background-color: #f3f3f3; */
+    /* background-image: url(assets/images/1.png);
+    background-position: center; */
+    color: #fff;
+}
+.logo a{
+    color: #fff;
+}
+
 /* left sidebar ============= */
 .inner-left-sidebar{
     border-top: 1px solid #262626;
 }
 
 .home-class{
-    color: #5f5f5f;
+    color: rgb(255 255 255 / 85%);
     display: block;
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-bottom: 10px;
 }
+
 .home-class:hover{
-    background: #f3f3f3;
-    color: #262626;
+    background: rgb(255 255 255 / 18%);
+    color: #fff;
+}
+.home-class:hover .fa-home, 
+.home-class:hover .fas, 
+.home-class:hover .far 
+{
+    color: blue;
 }
 .home-class .fa-home, 
 .home-class .fas,
 .home-class .far {
     padding-right: 5px;
 }
+/* ============================
+    left side menu collapse 
+    ============================ */
 
+/* submenu left margin */
+ul.plr-5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+i.fas.fa-chevron-right, i.fas.fa-chevron-down {
+    float: right;
+}
+ul>li.dropdown>ul.submenu a{
+    padding-left: 28px;
+    font-size: 14px;
+    color: #fff;
+}
+ul>li.dropdown>ul.submenu>li.dropdown>ul.submenu a{
+    padding-left: 48px;
+    font-size: 14px;
+    color: #fff;
+}
+    
+
+/* =============================================== */
+        /* main body */
+/* =============================================== */
 /* banner section  */
 .un-banner{
     margin: 15px;
@@ -408,7 +468,7 @@ nav>ul>li{
     font-size: 15px;
 }
 
-/* customer entry ================== */
+/* customer entry page ================== */
 .inner-khanapro-form{
     margin: 15px;
 }
@@ -446,7 +506,9 @@ nav>ul>li{
 
 }
 
-/* E- toho form ============ */
+/* ====================
+    E- toho form 
+   ==================== */
 .e-totho-form-container{
     padding: 15px;
     background-color: #fff;
@@ -637,26 +699,6 @@ nav>ul>li{
     background-color: #4c6e9d;
 }
 
-/* ======================
-    left side menu 
-    ==================== */
-.inner-left-sidebar ul ul li a{
-    color: #5f5f5f;
-    display: block;
-    padding-top: 10px;
-    padding-left: 45px;
-    padding-bottom: 10px;
 
-}
-.inner-left-sidebar ul ul li a:hover{
-    background: #f3f3f3;
-    color: #262626;
-}
-.inner-left-sidebar ul ul{
-    height: 0;
-    visibility: hidden;
-}
-.inner-left-sidebar ul li ul.active{
-    height: 100%;
-    visibility: visible;
-}
+
+ 
